@@ -55,6 +55,8 @@ def total_calibration2(equations: list[tuple[int, list[int]]]) -> int:
             calibration_count += value
     return calibration_count
 
+# Run
+
 def main() -> None:
     # Read input file and store equations as a list of tuples of the form '(value, [numbers])'
     with open(r"./2024/07/input.txt") as myfile:

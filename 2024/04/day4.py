@@ -55,6 +55,8 @@ def mas_count(arr: NDArray) -> int:
                 mas_count += 1
     return mas_count
 
+# Run
+
 def main() -> None:
 
     # Open file

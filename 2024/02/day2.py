@@ -1,8 +1,3 @@
-with open(r"./2024/02/input.txt") as myfile:
-    lines: list[str] = myfile.read().splitlines()
-
-values: list[list[int]] = [[int(i) for i in line.split(" ")] for line in lines]
-
 # Condition 1: Checks if list is all increasing or all decreasing by comparing it to the sorted versions
 def inc_or_dec(vals) -> bool:
     return vals == sorted(vals) or vals == sorted(vals, reverse=True)
@@ -40,8 +35,15 @@ def problem_dampener(vals_list) -> int:
             safe_reports += 1
     return safe_reports
     
+# Run
 
 def main() -> None:
+    # Open file:
+    with open(r"./2024/02/input.txt") as myfile:
+        lines: list[str] = myfile.read().splitlines()
+
+    values: list[list[int]] = [[int(i) for i in line.split(" ")] for line in lines]
+
     print(f"Number of safe reports: {safe_reports(values)}") # Problem 1
     print(f"Number of safe reports using The Problem Dampener: {problem_dampener(values)}") # Problem 2
 

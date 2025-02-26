@@ -45,6 +45,7 @@ def mul_conditional(mul_list: list[str]) -> list[str]:
 # Solution
 mul_conditional_solution: int = mul_sum_prod(mul_numbers(mul_conditional(mul_instructions_conditional)))
 
+# Run
 
 def main() -> None:
     print(f"Sum of all uncorrupted multiplications: {mul_solution}") # Problem 1

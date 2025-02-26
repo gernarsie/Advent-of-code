@@ -88,6 +88,8 @@ def guard_loop_count(arr: NDArray, path: list[tuple[int, int]]) -> int:
         loop_try[place[0], place[1]] = "."
     return loop_count
 
+# Run
+
 def main() -> None:
 
     # Opening file

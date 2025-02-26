@@ -57,6 +57,8 @@ def fix_updates(rules: list[tuple[int, ...]], updates: list[tuple[int, ...]]) ->
             fixed_updates.append(new_update)
     return fixed_updates
 
+# Run
+
 def main() -> None:
     # Getting the rules and updates separately
     with open(r"./2024/05/input.txt", newline='') as myfile:
