@@ -87,6 +87,7 @@ def filesystem_checksum2(disk_map: list[int]) -> int:
                 i += 1
     return checksum
 
+# Run
 
 def main() -> None:
     # Open file
